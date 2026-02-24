@@ -28,7 +28,7 @@ def banner():
 #     print(f"""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠟⠛⠛⠛⠛⠛⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣄⠀⠀⠀⠀⠀⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠀⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡆⠀⠀⠀⠀Hello World !! Welcome to the matrix⠀⠀⠀
-# ⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⠀⠀⠀I am Rohit a.k.a {red}H1TRO{reset}. I am a full time
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⠀⠀⠀I am Rohit a.k.a {red}RYNO{reset}. I am a full time
 # ⠀⠀⠀⠀⠀⠀⢀⡿⠀⠀⢀⣀⣤⡴⠶⠶⢦⣤⣀⡀⠀⠀⢻⡆⠀⠀⠀BugBounty Hunter and HackerOne Ambassador.⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠘⣧⡀⠛⢻⡏⠀⠀⠀⠀⠀⠀⠉⣿⠛⠂⣼⠇⠀⠀⠀I like identifying vulnerabilities and helping⠀⠀⠀
 # ⠀⠀⠀⠀⢀⣤⡴⠾⢷⡄⢸⡇⠀⠀⠀⠀⠀⠀⢀⡟⢀⡾⠷⢦⣤⡀⠀organizations reinforce their defenses.⠀⠀⠀
@@ -173,9 +173,9 @@ def tools():
 
 def social():
     print(f"{yellow}[{bgreen} *{yellow} ]{reset} My Social Handles :")
-    print(f"\t{bblue}|-- https://twitter.com/zh1tro{reset}")
+    print(f"\t{bblue}|-- https://twitter.com/rynosec{reset}")
     print(f"\t{bblue}|-- https://linkedin.com/in/h1tro{reset}")
-    print(f"\t{bblue}|-- https://github.com/zh1tro{reset}")
+    print(f"\t{bblue}|-- https://github.com/rynosec{reset}")
 
 
 def extension():
@@ -193,7 +193,7 @@ def about():
     print(f"""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠟⠛⠛⠛⠛⠛⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣄⠀⠀⠀⠀ ╔═════════════════════════════════════════════════╗⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡆⠀⠀⠀ ║      Hello World !! Welcome to the matrix       ║
-⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⠀⠀⠀║  I am Rohit a.k.a {red}H1TRO{reset}. I am a full time      ║
+⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⠀⠀⠀║  I am Rohit a.k.a {red}RYNO{reset}. I am a full time      ║
 ⠀⠀⠀⠀⠀⠀⢀⡿⠀⠀⢀⣀⣤⡴⠶⠶⢦⣤⣀⡀⠀⠀⢻⡆⠀⠀⠀║    BugBounty Hunter and HackerOne Ambassador.   ║
 ⠀⠀⠀⠀⠀⠀⠘⣧⡀⠛⢻⡏⠀⠀⠀⠀⠀⠀⠉⣿⠛⠂⣼⠇⠀⠀⠀║  I like identifying vulnerabilities and helping ║
 ⠀⠀⠀⠀⢀⣤⡴⠾⢷⡄⢸⡇⠀⠀⠀⠀⠀⠀⢀⡟⢀⡾⠷⢦⣤⡀⠀║    organizations reinforce their defenses.      ║
@@ -229,16 +229,16 @@ def exitapp():
     print(f"{yellow}[{bgreen} *{yellow} ]{reset} See you later :")
     print(" Thank you for stopping by !! You will be now redirected to my twitter, connect to get in touch :)")
     sleep(2)
-    document.location="https://x.com/zh1tro"
+    document.location="https://x.com/rynosec"
 
 def blog():
     print(f"{yellow}[{bgreen} *{yellow} ]{reset} You can find my blog at :")
-    print(f"{yellow}\t{bblue}|-- {yellow}https://blog.h1tro.com{reset}")
+    print(f"{yellow}\t{bblue}|-- {yellow}https://blog.ryno.sh{reset}")
 
 def choice():
 #     inp=input("""┌──(root㉿kali)-[~]
 # └─# """)
-    inp=input(f"""{blue}┌──({bred}root㉿h1tro.com{blue}){green}-{blue}[{bgreen}~{blue}]{blue}
+    inp=input(f"""{blue}┌──({bred}root㉿ryno.sh{blue}){green}-{blue}[{bgreen}~{blue}]{blue}
 └─{bred}#{reset} """)
     if(inp in commands):
         if(inp =="help"):
