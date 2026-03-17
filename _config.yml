@@ -14,16 +14,16 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: RYNO # the main title
+title: ROHIT # the main title
 
 tagline: BUGBOUNTY HUNTER # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Hi 👋! I am Rohit a.k.a RYNO. I am a full time BugBounty Hunter and  HackerOne Ambassador. This is my personal blog where all my bug findings get documented ;)
+  Hi 👋! I am Rohit a.k.a rohsec. I am a full time BugBounty Hunter and  HackerOne Ambassador. This is my personal blog where all my bug findings get documented ;)
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://ryno.sh"
+url: "https://rohsec.com"
 
 github:
   username: rynosec # change to your GitHub username
@@ -34,12 +34,12 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: RYNO
+  name: ROHIT
   email: rohit0x01@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/rynosec # change to your Twitter homepage
-    - https://github.com/rynosec # change to your GitHub homepage
+    - https://twitter.com/rohsec # change to your Twitter homepage
+    - https://github.com/rohsec # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
