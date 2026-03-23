@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://rohsec.com"
 
 github:
-  username: rynosec # change to your GitHub username
+  username: rohsec # change to your GitHub username
 
 twitter:
-  username: rynosec # change to your Twitter username
+  username: rohsec # change to your Twitter username
 
 social:
   # Change to your full name.
