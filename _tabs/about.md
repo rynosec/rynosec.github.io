@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-Hi 👋! I am Rohit a.k.a [RYNO](https://x.com/rynosec). I am a full time BugBounty Hunter and  HackerOne Ambassador. I like identifying vulnerabilities and helping organizations reinforce their defenses. 
+Hi 👋! I am Rohit a.k.a [RYNO](https://x.com/rohsec). I am a full time BugBounty Hunter and  HackerOne Ambassador. I like identifying vulnerabilities and helping organizations reinforce their defenses. 
 <!--have ethically hacked and secured various big techs such as Sony, RedBull, BBC, Dutch Government etc.  -->
 <!-- ![SocialBanner](https://i.postimg.cc/Jn2gYH24/rohsectemplatefont2.png) -->
 <!-- ![SocialBanner](https://pbs.twimg.com/profile_banners/1162220504784105472/1777114489/1500x500) -->
