@@ -16,14 +16,16 @@ timezone:
 
 title: ROHIT # the main title
 
-tagline: ETHICAL HACKER # it will display as the subtitle
+tagline: HACKER | BUGBOUNTY HUNTER # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Hi 👋! I am Rohit a.k.a RYNO(rohsec). I am a full time BugBounty Hunter and  HackerOne Ambassador. This is my personal blog where all my bug findings get documented ;)
+  Rohit Yadav (rohsec) is a full-time Bug Bounty Hunter, Ethical Hacker, and HackerOne Ambassador from India. 
+  This personal blog documents web application security research, bug bounty writeups, vulnerability discoveries, 
+  hacking tools, automation projects, and insights from real-world penetration testing and security research.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://ryno.sh"
+url: "https://rohsec.com"
 
 github:
   username: rohsec # change to your GitHub username
@@ -98,7 +100,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/1991855777116782592/JrNZ0ZZ6_400x400.jpg
+avatar: https://pbs.twimg.com/profile_images/2054979159504674816/lZQOB0C5_400x400.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

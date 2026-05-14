@@ -8,7 +8,8 @@ Hi 👋! I am Rohit a.k.a [RYNO](https://x.com/rohsec). I am a full time BugBoun
 <!--have ethically hacked and secured various big techs such as Sony, RedBull, BBC, Dutch Government etc.  -->
 <!-- ![SocialBanner](https://i.postimg.cc/Jn2gYH24/rohsectemplatefont2.png) -->
 <!-- ![SocialBanner](https://pbs.twimg.com/profile_banners/1162220504784105472/1777114489/1500x500) -->
-![SocialBanner](https://pbs.twimg.com/profile_banners/1162220504784105472/1778658999/1500x500)
+<!-- ![SocialBanner](https://pbs.twimg.com/profile_banners/1162220504784105472/1778658999/1500x500) -->
+![SocialBanner](https://pbs.twimg.com/profile_banners/1162220504784105472/1778780059/1500x500)
 <!-- I am rohsec, an Ethical Hacker , Bug Bounty Hunter and a Flet/Flutter developer.  -->
 <!-- ![Typing Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=70&duration=1500&pause=600&center=true&vCenter=true&multiline=true&width=1920&height=384&lines=Hi,there+👋!;I+am+Rohit%2Ca.k.a+rohsec;BugBounty+Hunter+%7C+HackerOne+Ambassador&repeat=false) -->
 
