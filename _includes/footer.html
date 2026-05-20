@@ -30,27 +30,44 @@
   (() => {
     const MOBILE_BREAKPOINT = '(max-width: 1199.98px)';
 
-    const openSidebarOnMobile = () => {
-      if (!window.matchMedia(MOBILE_BREAKPOINT).matches) return;
-
+    const shouldRun = () => {
+      if (!window.matchMedia(MOBILE_BREAKPOINT).matches) return false;
       const path = window.location.pathname.replace(/\/+$/, '') || '/';
-      if (path !== '/') return; // only auto-open on homepage landing
+      return path === '/'; // homepage only
+    };
 
-      const trigger = document.getElementById('sidebar-trigger');
-      if (!trigger) return;
-
+    const forceOpenSidebar = () => {
+      if (!shouldRun()) return;
       if (document.body.hasAttribute('sidebar-display')) return;
 
-      requestAnimationFrame(() => {
-        trigger.click();
-      });
+      const sidebar = document.getElementById('sidebar');
+      const mask = document.getElementById('mask');
+      if (!sidebar || !mask) return;
+
+      document.body.setAttribute('sidebar-display', '');
+      sidebar.classList.add('z-2');
+      mask.classList.remove('d-none');
+    };
+
+    const openWithRetry = () => {
+      let tries = 0;
+      const maxTries = 20;
+      const tick = () => {
+        tries += 1;
+        forceOpenSidebar();
+        if (document.body.hasAttribute('sidebar-display') || tries >= maxTries) return;
+        setTimeout(tick, 120);
+      };
+      tick();
     };
 
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', openSidebarOnMobile, { once: true });
+      document.addEventListener('DOMContentLoaded', openWithRetry, { once: true });
     } else {
-      openSidebarOnMobile();
+      openWithRetry();
     }
+
+    window.addEventListener('pageshow', openWithRetry, { once: true });
   })();
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="rohsec" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
