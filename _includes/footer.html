@@ -34,41 +34,39 @@
       if (!window.matchMedia(MOBILE_BREAKPOINT).matches) return false;
       const rawPath = window.location.pathname || '/';
       const path = rawPath.replace(/\/+$/, '') || '/';
-      return path === '/' || path === '/index.html'; // homepage only
+      return path === '/' || path === '/index.html';
     };
 
-    const forceOpenSidebar = () => {
+    const openSidebar = () => {
       if (!shouldRun()) return;
-      if (document.body.hasAttribute('sidebar-display')) return;
 
+      const trigger = document.getElementById('sidebar-trigger');
       const sidebar = document.getElementById('sidebar');
       const mask = document.getElementById('mask');
       if (!sidebar || !mask) return;
 
-      document.body.setAttribute('sidebar-display', '');
-      sidebar.classList.add('z-2');
-      mask.classList.remove('d-none');
+      // Prefer official toggle when available
+      if (!document.body.hasAttribute('sidebar-display') && trigger) {
+        trigger.click();
+      }
+
+      // Fallback: force state in case handlers were not attached
+      if (!document.body.hasAttribute('sidebar-display')) {
+        document.body.setAttribute('sidebar-display', '');
+        sidebar.classList.add('z-2');
+        mask.classList.remove('d-none');
+      }
     };
 
-    const openWithRetry = () => {
-      let tries = 0;
-      const maxTries = 20;
-      const tick = () => {
-        tries += 1;
-        forceOpenSidebar();
-        if (document.body.hasAttribute('sidebar-display') || tries >= maxTries) return;
-        setTimeout(tick, 120);
-      };
-      tick();
+    const scheduleOpens = () => {
+      // Run multiple times because Chirpy deferred scripts can override early state.
+      openSidebar();
+      setTimeout(openSidebar, 250);
+      setTimeout(openSidebar, 900);
     };
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', openWithRetry, { once: true });
-    } else {
-      openWithRetry();
-    }
-
-    window.addEventListener('pageshow', openWithRetry, { once: true });
+    window.addEventListener('load', scheduleOpens, { once: true });
+    window.addEventListener('pageshow', scheduleOpens, { once: true });
   })();
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="rohsec" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
