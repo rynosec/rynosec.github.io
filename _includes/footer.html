@@ -32,8 +32,9 @@
 
     const shouldRun = () => {
       if (!window.matchMedia(MOBILE_BREAKPOINT).matches) return false;
-      const path = window.location.pathname.replace(/\/+$/, '') || '/';
-      return path === '/'; // homepage only
+      const rawPath = window.location.pathname || '/';
+      const path = rawPath.replace(/\/+$/, '') || '/';
+      return path === '/' || path === '/index.html'; // homepage only
     };
 
     const forceOpenSidebar = () => {
