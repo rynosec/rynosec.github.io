@@ -174,7 +174,7 @@ def tools():
 def social():
     print(f"{yellow}[{bgreen} *{yellow} ]{reset} My Social Handles :")
     print(f"\t{bblue}|-- https://twitter.com/rynosec{reset}")
-    print(f"\t{bblue}|-- https://linkedin.com/in/h1tro{reset}")
+    print(f"\t{bblue}|-- https://linkedin.com/in/rohsec{reset}")
     print(f"\t{bblue}|-- https://github.com/rynosec{reset}")
 
 
