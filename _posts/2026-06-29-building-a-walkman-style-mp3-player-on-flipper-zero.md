@@ -9,7 +9,7 @@ For a while I had this silly but very satisfying idea in the back of my head: wh
 
 Not a streaming client. Not a modern polished media app. Just a fun, nostalgic little controller with a retro cassette-player feel.
 
-That idea eventually turned into Flipper Walkman — a native Flipper Zero external app that talks over UART to one of those cheap MP3 modules you can find all over hobby electronics stores and marketplaces. I built it around a GD3300D / HW-311 style board with a microSD card slot and headphone output, and after a few iterations it actually became a working little project.
+That idea eventually turned into [Flipper Walkman](https://github.com/rynosec/flipper-walkman) — a native Flipper Zero external app that talks over UART to one of those cheap MP3 modules you can find all over hobby electronics stores and marketplaces. I built it around a GD3300D / HW-311 style board with a microSD card slot and headphone output, and after a few iterations it actually became a working little project.
 
 Here are a few real-life shots of the build:
 
