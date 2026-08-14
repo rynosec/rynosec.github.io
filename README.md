@@ -1,2 +1,2 @@
 My Personal Website
-# [rohsec.com](https://rohsec.com)
+# [ryno.sh](https://ryno.sh)
