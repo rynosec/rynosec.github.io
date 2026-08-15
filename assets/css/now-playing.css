@@ -11,6 +11,8 @@ html[data-mode='dark'] {
   --link-underline-color: rgba(0, 255, 65, 0.28);
   --button-bg: #0d0d0d;
   --btn-border-color: rgba(255, 255, 255, 0.1);
+  --btn-backtotop-color: #d6d6d6;
+  --btn-backtotop-border-color: rgba(255, 255, 255, 0.08);
   --sidebar-bg: #0a0a0a;
   --sidebar-border-color: rgba(255, 255, 255, 0.06);
   --sidebar-muted-color: #99a1ad;
@@ -23,6 +25,7 @@ html[data-mode='dark'] {
   --card-bg: #0a0a0a;
   --card-hover-bg: #101010;
   --card-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  --card-header-bg: #111111;
   --img-bg: #0d0d0d;
   --prompt-text-color: #d6d6d6;
   --tag-hover: rgba(0, 255, 65, 0.14);
@@ -61,6 +64,30 @@ html[data-mode='dark'] h5 {
   letter-spacing: -0.02em;
 }
 
+html[data-mode='dark'] .post-preview,
+html[data-mode='dark'] .categories.card,
+html[data-mode='dark'] .list-group-item,
+html[data-mode='dark'] .card,
+html[data-mode='dark'] #topbar-wrapper,
+html[data-mode='dark'] #search-result-wrapper .content,
+html[data-mode='dark'] #toc-wrapper,
+html[data-mode='dark'] .access > section {
+  background-color: var(--card-bg) !important;
+}
+
+html[data-mode='dark'] .post-preview {
+  background: var(--card-bg) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+html[data-mode='dark'] .post-preview::before {
+  background-color: var(--card-hover-bg) !important;
+}
+
+html[data-mode='dark'] .categories .card-header {
+  background-color: var(--card-header-bg) !important;
+}
+
 html[data-mode='dark'] #sidebar .nav-link:hover,
 html[data-mode='dark'] #sidebar .nav-item.active .nav-link,
 html[data-mode='dark'] #sidebar .sidebar-bottom a:hover,
@@ -75,6 +102,19 @@ html[data-mode='dark'] .post-meta a:not([class]):hover,
 html[data-mode='dark'] .content a:not(.img-link):hover {
   color: #00ff41 !important;
   border-bottom-color: #00ff41 !important;
+}
+
+html[data-mode='dark'] #search-results a,
+html[data-mode='dark'] .content a:not(.img-link),
+html[data-mode='dark'] .post-tags .post-tag,
+html[data-mode='dark'] .tag,
+html[data-mode='dark'] a {
+  color: var(--link-color);
+}
+
+html[data-mode='dark'] .post-tail-wrapper .post-meta a:not(:hover),
+html[data-mode='dark'] .content a:not(.img-link) {
+  border-bottom-color: var(--link-underline-color);
 }
 
 .now-playing-widget,
@@ -432,6 +472,30 @@ html[data-mode='light'] .now-playing-empty {
     letter-spacing: -0.02em;
   }
 
+  html:not([data-mode]) .post-preview,
+  html:not([data-mode]) .categories.card,
+  html:not([data-mode]) .list-group-item,
+  html:not([data-mode]) .card,
+  html:not([data-mode]) #topbar-wrapper,
+  html:not([data-mode]) #search-result-wrapper .content,
+  html:not([data-mode]) #toc-wrapper,
+  html:not([data-mode]) .access > section {
+    background-color: var(--card-bg) !important;
+  }
+
+  html:not([data-mode]) .post-preview {
+    background: var(--card-bg) !important;
+    box-shadow: var(--card-shadow) !important;
+  }
+
+  html:not([data-mode]) .post-preview::before {
+    background-color: var(--card-hover-bg) !important;
+  }
+
+  html:not([data-mode]) .categories .card-header {
+    background-color: var(--card-header-bg) !important;
+  }
+
   html:not([data-mode]) #sidebar .nav-link:hover,
   html:not([data-mode]) #sidebar .nav-item.active .nav-link,
   html:not([data-mode]) #sidebar .sidebar-bottom a:hover,
@@ -446,5 +510,18 @@ html[data-mode='light'] .now-playing-empty {
   html:not([data-mode]) .content a:not(.img-link):hover {
     color: #00ff41 !important;
     border-bottom-color: #00ff41 !important;
+  }
+
+  html:not([data-mode]) #search-results a,
+  html:not([data-mode]) .content a:not(.img-link),
+  html:not([data-mode]) .post-tags .post-tag,
+  html:not([data-mode]) .tag,
+  html:not([data-mode]) a {
+    color: var(--link-color);
+  }
+
+  html:not([data-mode]) .post-tail-wrapper .post-meta a:not(:hover),
+  html:not([data-mode]) .content a:not(.img-link) {
+    border-bottom-color: var(--link-underline-color);
   }
 }
